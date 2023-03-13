@@ -1,5 +1,5 @@
 ## ¡Hola!
-Esta es la carpeta de la Práctica 6: Diseño modular (parte 2), de la clase Arquitectura de Computadoras (TE2031).
+Esta es la carpeta de la **Práctica 6: Diseño modular (parte 2)**, de la clase Arquitectura de Computadoras (TE2031).
 
 ## Reporte
 Para más información sobre la práctica y cómo se llevó a cabo, visite la wiki correspondiente:
