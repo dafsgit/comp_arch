@@ -261,7 +261,7 @@ void loop()
           Serial.println("pause!");
           pause = 1;
           ctrl = 0;
-          // TO-DO: implementar pausa
+          
       } else if(opt == "show"){
           Serial.println("show!");
           Serial.println(myHiddenStr);
