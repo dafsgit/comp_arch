@@ -4,4 +4,4 @@ Esta es la carpeta de la **Práctica 8: I2C en Raspberry**, de la clase Arquitec
 ## Reporte
 Para más información sobre la práctica y cómo se llevó a cabo, visite la wiki correspondiente:
 
-* **I2C en Raspberry** → _[i2cRasp]()_
+* **I2C en Raspberry** → _[i2cRasp](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica-8:-I2C-en-Raspberry)_

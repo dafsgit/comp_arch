@@ -16,4 +16,4 @@ Para más información sobre las prácticas y cómo se llevaron a cabo, visite l
 * **[Diseño modular 2](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica-6:-Dise%C3%B1o-modular-(parte-2))**
 * **[Compiladores en Raspbian](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica-7:-Compiladores-en-Raspbian)**
 * **[Printf y Scanf](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica:-Printf-y-Scanf)**
-* **[I2C en Raspberry]()**
+* **[I2C en Raspberry](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica-8:-I2C-en-Raspberry)**
