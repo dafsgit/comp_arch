@@ -9,6 +9,8 @@ Correspondencia de archivos o carpetas con prácticas del manual proporcionado p
 * **Compiladores en Raspbian** → _[compRasp](compRasp)_
 * **Printf y Scanf** → _[printfScanf](printfScanf)_
 * **I2C en Raspberry** → _[i2cRasp](i2cRasp)_
+* **GPIO en Raspberry** → _[gpioRasp](gpioRasp)_
+* **Raspberry y UART** → _[serialRaspArd](serialRaspArd)_
 
 ## Reportes
 Para más información sobre las prácticas y cómo se llevaron a cabo, visite la wiki correspondiente a cada una de ellas:
@@ -17,3 +19,5 @@ Para más información sobre las prácticas y cómo se llevaron a cabo, visite l
 * **[Compiladores en Raspbian](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica-7:-Compiladores-en-Raspbian)**
 * **[Printf y Scanf](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica:-Printf-y-Scanf)**
 * **[I2C en Raspberry](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica-8:-I2C-en-Raspberry)**
+* **[GPIO en Raspberry](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica-9:-GPIO-en-Raspberry)
+* **[Raspberry y UART](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica-10:-Raspberry-y-UART)
