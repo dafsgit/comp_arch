@@ -19,5 +19,5 @@ Para más información sobre las prácticas y cómo se llevaron a cabo, visite l
 * **[Compiladores en Raspbian](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica-7:-Compiladores-en-Raspbian)**
 * **[Printf y Scanf](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica:-Printf-y-Scanf)**
 * **[I2C en Raspberry](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica-8:-I2C-en-Raspberry)**
-* **[GPIO en Raspberry](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica-9:-GPIO-en-Raspberry)
-* **[Raspberry y UART](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica-10:-Raspberry-y-UART)
+* **[GPIO en Raspberry](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica-9:-GPIO-en-Raspberry)**
+* **[Raspberry y UART](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica-10:-Raspberry-y-UART)**
