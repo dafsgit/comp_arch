@@ -12,6 +12,7 @@ Correspondencia de archivos o carpetas con prácticas del manual proporcionado p
 * **GPIO en Raspberry** → _[gpioRasp](gpioRasp)_
 * **Raspberry y UART** → _[serialRaspArd](serialRaspArd)_
 * **GUI Prueba** → _[guiPrueba](guiPrueba)_
+* **Sistema de Monitoreo** → _[proyectoFinal](proyectoFinal)_
 
 ## Reportes
 Para más información sobre las prácticas o actividades y cómo se llevaron a cabo, visite la wiki correspondiente a cada una de ellas:
@@ -23,3 +24,4 @@ Para más información sobre las prácticas o actividades y cómo se llevaron a 
 * **[GPIO en Raspberry](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica-9:-GPIO-en-Raspberry)**
 * **[Raspberry y UART](https://github.com/dafsgit/comp_arch/wiki/Pr%C3%A1ctica-10:-Raspberry-y-UART)**
 * **[GUI Prueba](https://github.com/dafsgit/comp_arch/wiki/Actividad-1:-GUI-Prueba)**
+* **[Sistema de Monitoreo](https://github.com/dafsgit/comp_arch/wiki/Proyecto-Final:-Sistema-de-Monitoreo)**
