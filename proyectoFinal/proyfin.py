@@ -32,7 +32,7 @@ config = {
 }
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
-email = "A01732610@tec.mx"
+email = "a01732610@tec.mx"
 password = "12345678"
 try:
 	signin = auth.sign_in_with_email_and_password(email, password)
@@ -78,15 +78,14 @@ s = serial.Serial('/dev/ttyACM0', 9600)
 class Ui_MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 	def sensorLoop(self):
 		# Read temperature and humidity
+		global t, h, thValues
 		thValues = thInstance.read()
 		if thValues.is_valid():
 			t = thValues.temperature
 			h = thValues.humidity
-		else:
-			t = 0
-			h = 0
 			
 		# Read light
+		global lPin
 		if GPIO.input(lPin) == 0:
 			lVal = True
 			lStr = 'ON'
@@ -95,11 +94,12 @@ class Ui_MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 			lStr = 'OFF'
 		
 		# Read distance
+		global dInstance
 		d = float(format(dInstance.distance*100, '.2f'))
-		#d = 0
 
 		# Read flame
-		if GPIO.input(fPin) == 1:
+		global fPin
+		if GPIO.input(fPin) == 0:
 			fVal = True
 			fStr = 'ON'
 		else:
@@ -117,13 +117,13 @@ class Ui_MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 		draw.text((88, 28), lStr, font=font, fill=255)
 		draw.text((10, 40), 'Dist (cm):', font=font, fill=255)
 		draw.text((88, 40), f'{d}', font=font, fill=255)
-		draw.text((10, 52), 'Flame:', font=font, fill=255)
+		draw.text((10, 52), 'Presence:', font=font, fill=255)
 		draw.text((88, 52), fStr, font=font, fill=255)
 		disp.image(image)
 		disp.show()
 		
 		# Show sensor values - LED matrix
-		command1 = 'control!write!T' + str(int(t)) + ' H' + str(int(h)) + ' L' + lStr + ' D' + str(int(d)) + ' F' + fStr + '*'
+		command1 = 'control!write!T' + str(int(t)) + ' H' + str(int(h)) + ' L' + lStr + ' D' + str(int(d)) + ' P' + fStr + '*'
 		command2 = 'control!show!'
 		s.write(command1.encode())
 		s.write(command2.encode())
@@ -137,15 +137,15 @@ class Ui_MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 		
 		# Update RT database - Firebase
 		dtTemp = {"Temperatura": f"{t}"}
-		db.child("Sensores").child("T").update(dtTemp)
+		db.child("Sensores").update(dtTemp)
 		dtHumi = {"Humedad": f"{h}"}
-		db.child("Sensores").child("H").update(dtHumi)
+		db.child("Sensores").update(dtHumi)
 		dtLght = {"Luz": lStr}
-		db.child("Sensores").child("L").update(dtLght)
+		db.child("Sensores").update(dtLght)
 		dtDist = {"Distancia": f"{d}"}
-		db.child("Sensores").child("D").update(dtDist)
-		dtFlme = {"Flama": fStr}
-		db.child("Sensores").child("F").update(dtFlme)
+		db.child("Sensores").update(dtDist)
+		dtFlme = {"Presencia": fStr}
+		db.child("Sensores").update(dtFlme)
 		
 		timeNow = datetime.datetime.now()
 		window.lbl_time.setText("Última actualización: " + str(timeNow))

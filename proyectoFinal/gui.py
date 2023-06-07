@@ -115,10 +115,10 @@ class Ui_MainWindow(object):
         self.lbl_hmd.setText(_translate("MainWindow", "Humedad"))
         self.lbl_dst.setText(_translate("MainWindow", "Distancia"))
         self.lbl_lgt.setText(_translate("MainWindow", "Luz"))
-        self.lbl_flm.setText(_translate("MainWindow", "Flama"))
+        self.lbl_flm.setText(_translate("MainWindow", "Presencia"))
         self.lbl_cgr.setText(_translate("MainWindow", "°C"))
         self.lbl_cm.setText(_translate("MainWindow", "cm"))
-        self.lbl_time.setText(_translate("MainWindow", "TextLabel"))
+        self.lbl_time.setText(_translate("MainWindow", "Actualización"))
 
 
 if __name__ == "__main__":
